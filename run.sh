@@ -5,7 +5,8 @@ set -xue
 # QEMU file path
 QEMU=qemu-system-riscv32
 
-CC=/usr/local/opt/llvm/bin/clang
+CC=/usr/bin/clang
+# CC=/usr/local/opt/llvm/bin/clang
 
 # option settings
 CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv32-unknown-elf -ffreestanding -nostdlib"
